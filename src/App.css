@@ -1,0 +1,11 @@
+ul li{
+    list-style: none;
+}
+.inputBox{
+    padding: 8px 15px;
+}
+.button{
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

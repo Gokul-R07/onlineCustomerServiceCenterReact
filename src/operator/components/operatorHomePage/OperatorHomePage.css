@@ -1,19 +1,24 @@
 .operatorHomePage{
     /* border:2px solid black; */
     display: flex;
-   justify-content: center;
-    /* align-items:center; */
+    flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
     min-height: 100vh;
     margin-top: 50px;
 
 }
 .issueDiv{
-    border:2px solid black;
+     border:2px solid black;
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
      background-color: #fcd58b;
      padding: 10px;
      margin-bottom: 10px;
      border-radius: 10px;
+     min-height: 150px;
+     display: flex;
+     flex-direction: column;
+     gap:15px;
 }
 .issuesDiv{
     width:700px;
@@ -26,12 +31,16 @@
     max-height: 30px;
 }
 .addSolutionBtn{
-    padding: 8px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
+    /* border: none; */
+    font-weight: bold;
+    align-self:flex-end;
 }
 .addSolutionBtn:hover{
     background-color:blue ;
     color: white;
+   
+}
+.welcomeText{
+    align-self: flex-start;
+    margin-left: 50px;
 }

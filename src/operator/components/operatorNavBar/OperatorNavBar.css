@@ -1,0 +1,23 @@
+.operatorNavBar{
+    background-color: #daa137;
+    height: 60px;
+    display: flex;
+   align-items: center;
+   /* padding: 5px; */
+   justify-content: space-between;
+   /* border:2px solid black; */
+   padding-left: 30px;
+  
+}
+.operatorNavBar nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+      /* border:2px solid black; */
+}
+.logOutDiv{
+    display: flex;
+    justify-content: space-around;
+    /* border:2px solid black; */
+    width: 300px;
+}
