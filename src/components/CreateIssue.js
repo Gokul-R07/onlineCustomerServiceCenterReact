@@ -4,11 +4,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function IssueForm() {
     
-    const [issue, setIssue] = useState({
-        
+    const [issue, setIssue] = useState(() => ({
+     
         issueType: 'Engine problems',
         issueDescription: ''
-    });
+    }));
+    
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -21,7 +22,7 @@ function IssueForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        IssueService.addIssueToCustomer(1002, issue)
+        IssueService.addIssueToCustomer(1, issue)
             .then(
                 (resp) => {
                     console.log(resp);

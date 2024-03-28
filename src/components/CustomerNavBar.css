@@ -4,6 +4,7 @@
    align-items: center;
    justify-content: space-between;
    padding-left: 30px;
+   
   
 }
 .customerNavBar nav{
@@ -11,12 +12,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-      /* border:2px solid black; */
+    
 }
 .logOutDiv{
     display: flex;
     justify-content: space-around;
-    /* border:2px solid black; */
+
     width: 300px;
 }
 .customerNavBar {
@@ -26,4 +27,16 @@
   .customerNavBar .nav-link {
     color: white;
   }
-  
+
+.navLinks{
+  color: white;
+  text-decoration: none;
+}
+.navLinks:hover{
+  text-decoration: underline;
+}
+
+.container ul{
+  display: flex;
+  gap:15px
+}

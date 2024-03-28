@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CustomerService from '../service/CustomerService'; // Import the customer service
+import CustomerService from '../service/CustomerService'; 
 import Customer from '../assets/customer.jpg'
 function View() {
     const [customer, setCustomer] = useState({
@@ -15,8 +15,9 @@ function View() {
     }, []);
 
     const loadCustomerData = () => {
+        const customerEmail = sessionStorage.getItem("emailId");
         CustomerService
-            .getCustomerByEmail("gk@gmail.com")
+            .getCustomerByEmail(customerEmail)
             .then((resp) => {
                 setCustomer(resp.data);
             })

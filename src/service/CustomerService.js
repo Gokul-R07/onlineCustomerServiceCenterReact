@@ -5,8 +5,8 @@ class CustomerService {
         return axiosInstance.get(`http://localhost:8080/customer/${email}`);
     }
 
-    updateCustomer(customer) {
-        return axiosInstance.put(`http://localhost:8080/customer`,customer);
+    updateCustomerProfile(customer) {
+        return axiosInstance.put(`http://localhost:8080/update/customer`,customer);
     }
 }
 

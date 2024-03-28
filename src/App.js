@@ -3,18 +3,22 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateIssue from './components/CreateIssue';
 import ViewCustomer from './components/viewCustomer';
 import UpdateCustomer from './components/UpdateCustomer';
-import CustomerNavBar from './components/customerNavBar';
+import { CustomerLayout } from './pages/CustomerLayout';
+
 function App() {
+  sessionStorage.setItem("emailId", "rg@gmail.com");
   return (
     <div className="App">
+     
    <BrowserRouter>
         <Routes>
-            <Route path="/create-issue" element={<CreateIssue />} />
-            <Route path="/view-customer" element={<ViewCustomer />}></Route>
-            <Route path="/update-customer" element={<UpdateCustomer />}></Route>
-            <Route path="/navbar" element={<CustomerNavBar />}></Route>
+            <Route path="/create-issue" element={<CustomerLayout><CreateIssue /></CustomerLayout> } />
+            <Route path="/view-customer" element={ <CustomerLayout><ViewCustomer /></CustomerLayout> }></Route>
+            <Route path="/update-customer" element={ <CustomerLayout><UpdateCustomer /></CustomerLayout> }></Route>
+            <Route path="/" element={<CustomerLayout />}></Route>
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
