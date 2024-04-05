@@ -4,7 +4,9 @@ import OperatorService from '../../services/OperatorService';
 import toast from 'react-hot-toast';
 
 const ChangePassword = () => {
-  const id=sessionStorage.getItem('id');
+
+
+const id=sessionStorage.getItem('id');
 const [passwordData,setPasswordData]=useState({
   oldPassword:"",
   newPassword:"",
@@ -38,6 +40,8 @@ const handleSubmit=async(e)=>{
   }
 
 }
+
+
   return (
     <div className='changePassword' >
         <form onSubmit={handleSubmit} className='changePasswordDiv'  >

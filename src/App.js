@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
      <Toaster
-  position="top-right"
-  reverseOrder={false}
-/>
+    position="top-right"
+    reverseOrder={false}
+    />
       <Router>
         <Routes>
           <Route path="/" element={

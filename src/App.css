@@ -9,3 +9,7 @@ ul li{
     cursor: pointer;
     border-radius: 5px;
 }
+.linkTag{
+   text-decoration: none;
+   color: black;
+}
